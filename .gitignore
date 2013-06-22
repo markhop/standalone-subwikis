@@ -1,0 +1,16 @@
+# Ignore standard FitNesse pages
+/FitNesseRoot/ErrorLogs
+/FitNesseRoot/FrontPage
+/FitNesseRoot/FitNesse
+/FitNesseRoot/PageFooter
+/FitNesseRoot/PageHeader
+/FitNesseRoot/files/testResults
+/FitNesseRoot/properties
+/FitNesseRoot/updateDoNotCopyOverList
+/FitNesseRoot/updateList
+
+# contents of lib directory should be downloaded
+/lib/
+
+# ignore gradle build files
+/.gradle

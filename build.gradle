@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime 'org.fitnesse:fitnesse:20130530:standalone'
+}
+
+task cleanUp << {
+    delete 'lib'
+}
+
+task copyToLib(type: Copy) {
+    into "./lib"
+    from configurations.runtime
+    rename { String fileName ->
+         fileName.replaceAll('fitnesse-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-standalone.jar', 'fitnesse-standalone.jar')
+    }
+}
+
+task start(type: Exec, dependsOn: [copyToLib]) {
+    workingDir './'
+    description = 'starts fitnesse'
+    executable 'cmd.exe'
+	args '/C', 'java -jar lib/fitnesse-standalone.jar -p 8050'
+}
