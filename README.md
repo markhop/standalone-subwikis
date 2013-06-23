@@ -18,5 +18,7 @@ The project provides..
 The project requires the following...
 
 - Java (JRE/JDK) 1.6 minimum
+- The [Gradle](http://gradle.org) build system
+
 
 

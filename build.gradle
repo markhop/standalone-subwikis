@@ -6,10 +6,10 @@ repositories {
 }
 
 dependencies {
-    runtime 'org.fitnesse:fitnesse:20130530:standalone'
+    runtime "org.fitnesse:fitnesse:${fitnesseVersion}:standalone"
 }
 
-task cleanUp << {
+task cleanUpLib << {
     delete 'lib'
 }
 
