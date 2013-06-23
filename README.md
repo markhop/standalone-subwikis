@@ -10,15 +10,18 @@ This project was created to investigate the possibility of creating standalone s
 The project provides..
 
 - a _.gitignore_ file specifically tailored to keep all of _FitNesse's_ own pages out of the git repository
-- _startup.bat_ a Windows batch file to start up the _FitNesse_ instance
-- _lib/fitnesse-standalone.jar_ the _FitNesse_ software
-
+- _build.gradle_ a [Gradle](http://gradle.org) build file to start up the _FitNesse_ instance
+- _gradle.properties_ used to specify the version of _FitNesse_ to use
+- _plugins.properties_ the _FitNesse_ plugins files specifying how _FitNesse_ should behave
+- _README.md_ this file...
 ## Dependencies ##
 
 The project requires the following...
 
 - Java (JRE/JDK) 1.6 minimum
 - The [Gradle](http://gradle.org) build system
+- a connection to the internet
+
 
 
 
