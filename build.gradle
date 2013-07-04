@@ -46,7 +46,7 @@ task copyToLib(type: Copy) {
     into "./lib"
     from configurations.runtime
     rename { String fileName ->
-         fileName.replaceAll('fitnesse-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-standalone.jar', 'fitnesse-standalone.jar')
+        fileName.replaceAll('fitnesse-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-standalone.jar', 'fitnesse-standalone.jar')
     }
 }
 
