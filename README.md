@@ -23,6 +23,31 @@ The project requires the following...
 - The [Gradle](http://gradle.org) build system
 - a connection to the internet
 
+## Usage ##
+
+To use the project simply clone the github project and after ensuring the dependencies (above) are installed issue the following at the command line.
+
+    gradle start
+
+The first time this command is run FitNesse and all its dependencies will be downloaded prior to FitNesse being run up on port 8050.
+
+    C:\Users\Mark\Documents\GitHub\standalone-subwikis>gradle start
+    :copyToLib
+    Download http://repo1.maven.org/maven2/org/fitnesse/fitnesse/20130530/fitnesse-20130530.pom
+    Download http://repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.2.1/diffutils-1.2.1.pom
+    Download http://repo1.maven.org/maven2/org/fitnesse/fitnesse/20130530/fitnesse-20130530-standalone.jar
+    Download http://repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.2.1/diffutils-1.2.1.jar
+    :start
+    FitNesse (v20130530) Started...
+    java -jar lib/fitnesse-standalone.jar -p 8050 is ready
+    
+    BUILD SUCCESSFUL
+    
+    Total time: 25.256 secs
+    C:\Users\Mark\Documents\GitHub\standalone-subwikis>
+
+
+To access the running FitNesse instance point your favourite browser at `http://localhost:8050`.  The instance is started in the background so the command shell can continue to be used for other tasks.  To shutdown the instance simply point your browser to `http://localhost:8050?shutdown`.
 
 
 
