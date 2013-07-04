@@ -52,6 +52,6 @@ task copyToLib(type: Copy) {
 
 task start(type: ExecWait, dependsOn: [copyToLib]) {
     directory './'
-    command 'java -jar lib/fitnesse-standalone.jar -p 8050'
+    command "java -jar lib/fitnesse-standalone.jar -p ${fitnessePort}"
     ready 'Started...'
 }

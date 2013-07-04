@@ -49,5 +49,10 @@ The first time this command is run FitNesse and all its dependencies will be dow
 
 To access the running FitNesse instance point your favourite browser at `http://localhost:8050`.  The instance is started in the background so the command shell can continue to be used for other tasks.  To shutdown the instance simply point your browser to `http://localhost:8050?shutdown`.
 
+### Port Number ###
+
+If you wish to start the FitNesse instance on a different port number to `8050` then either change the value specified for the `fitnessePort` variable in the `gradle.properties` file or override the value on the command line.
+
+    gradle start -PfitnessePort=8065
 
 
