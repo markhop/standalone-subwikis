@@ -14,6 +14,7 @@ The project provides..
 - _gradle.properties_ used to specify the version of _FitNesse_ to use
 - _plugins.properties_ the _FitNesse_ plugins files specifying how _FitNesse_ should behave
 - _README.md_ this file...
+
 ## Dependencies ##
 
 The project requires the following...
