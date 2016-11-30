@@ -1,7 +1,7 @@
 # Standalone Sub-Wikis #
 
 ## Overview ##
-[FitNesse](http://fitnesse.org) is a _"standalone [wiki](http://wiki.org/wiki.cgi?WhatIsWiki) and acceptance testing framework"_ that uses a page hierarchy similar to a filesystems directory structure.  This [Sub-Wiki](http://www.fitnesse.org/FitNesse.UserGuide.SubWiki) feature allows project pages to be isolated effectively providing namespace separation.
+[FitNesse](http://fitnesse.org) is a _"standalone [wiki](http://wiki.org/wiki.cgi?WhatIsWiki) and acceptance testing framework"_ that uses a page hierarchy similar to a filesystems directory structure.  This [Sub-Wiki](http://fitnesse.org/FitNesse.UserGuide.FitNesseWiki.SubWiki) feature allows project pages to be isolated effectively providing namespace separation.
 
 This project was created to investigate the possibility of creating standalone sub-wikis using the __fitnesse__ software to create the sub-wikis but keeping _FitNesse's_ own pages out of the source code repository.
 
